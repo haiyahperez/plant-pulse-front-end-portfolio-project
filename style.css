@@ -29,10 +29,10 @@ main{
     grid-template-columns: 1fr 2fr;
 }
 
+.plant{
+    display: inline;
+}
 
-
- 
 footer{
     display: grid;
-    grid-template-rows: 1fr;
 }
