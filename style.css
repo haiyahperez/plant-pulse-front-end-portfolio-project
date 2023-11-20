@@ -23,14 +23,44 @@ header{
     grid-template-columns: auto;
 }
 
-main{
+/* Search Bar */
+.search-container {
+    margin: 20px;
+}
+
+input[type="text"] {
+    padding: 8px;
+}
+
+button {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.plant-content{
     display: grid; 
     grid-template-rows: auto;
     grid-template-columns: 1fr 2fr;
 }
 
-.plant{
-    display: inline;
+.default-icon img{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+
+.plants{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hide{
+    display: none;
+}
+
+li{
+    list-style-type: none;
 }
 
 footer{
