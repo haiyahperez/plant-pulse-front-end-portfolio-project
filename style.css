@@ -55,6 +55,10 @@ button {
     grid-template-columns: 1fr 1fr;
 }
 
+.more-info{
+    border: 3px solid #585858;
+    text-align: center;
+}
 .hide{
     display: none;
 }

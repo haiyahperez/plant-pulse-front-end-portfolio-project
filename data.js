@@ -26,7 +26,16 @@ fetch("https://perenual.com/api/species-list?key=sk-R3Sv6553bfd2d29442964")
         let otherName = plant.other_name;
         if (!otherName[0]) {
             otherName = "N/A" 
-        };
+        } else {
+            otherName = otherName.reduce((acc,name,index)=>{
+                if(index === otherName.length - 1){
+                  acc += `${name}` 
+                }else{
+                  acc+= `${name}, ` 
+                } 
+                return acc
+              }, "")
+        }
             moreInfo.classList.add("more-info")
             moreInfo.innerHTML = `
             <p>Other name(s): ${otherName}</p>
